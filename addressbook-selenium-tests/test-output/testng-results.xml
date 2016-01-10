@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20247" started-at="2012-01-18T00:35:45Z" finished-at="2012-01-18T00:36:05Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20247" started-at="2012-01-18T00:35:45Z" finished-at="2012-01-18T00:36:05Z">
+      <class name="com.example.tests.GroupCreationTests">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.GroupCreationTests@5e785d65]" name="setUp" is-config="true" duration-ms="100" started-at="2012-01-18T00:35:45Z" finished-at="2012-01-18T00:35:45Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidGroupCanBeCreated(com.example.fw.GroupObject)[pri:0, instance:com.example.tests.GroupCreationTests@5e785d65]" name="testValidGroupCanBeCreated" duration-ms="16911" started-at="2012-01-18T00:35:45Z" finished-at="2012-01-18T00:36:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Group [16,: name195750936]]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidGroupCanBeCreated(com.example.fw.GroupObject)[pri:0, instance:com.example.tests.GroupCreationTests@5e785d65]" name="testValidGroupCanBeCreated" duration-ms="1392" started-at="2012-01-18T00:36:02Z" finished-at="2012-01-18T00:36:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Group [17,: name-1535334921]]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidGroupCanBeCreated(com.example.fw.GroupObject)[pri:0, instance:com.example.tests.GroupCreationTests@5e785d65]" name="testValidGroupCanBeCreated" duration-ms="1505" started-at="2012-01-18T00:36:04Z" finished-at="2012-01-18T00:36:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Group [18,: name-1492494057]]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.GroupCreationTests@5e785d65]" name="tearDown" is-config="true" duration-ms="276" started-at="2012-01-18T00:36:05Z" finished-at="2012-01-18T00:36:05Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

@@ -1,0 +1,94 @@
+package seleniumRC;
+
+import com.thoughtworks.selenium.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import java.util.regex.Pattern;
+
+public class TestAction extends SeleneseTestBase{
+	private DefaultSelenium selenium;
+
+	@Before
+	public void setUp() throws Exception {
+		selenium = new DefaultSelenium("localhost", 4444, "*chrome", "http://localhost:4444/");
+		selenium.start();
+	}
+
+	@Test
+	public void testCreateNewAction() throws Exception {
+		openPage("http://localhost:5500/");
+
+		selenium.click("link=New Action");
+		//  waiting for window to open
+		for (int second = 0;; second++) {
+			if (second >= 60) fail("timeout");
+			try { if (selenium.isElementPresent("id=window_dialog_new_action")) break; } catch (Exception e) {}
+			Thread.sleep(1000);
+		}
+
+		//  verify that window is opened
+		assertTrue(selenium.isElementPresent("//div[@id=\"window_dialog_new_action\"]"));
+		//  verify count of options in drop-down list 
+		verifyEquals("4", selenium.getXpathCount("//select[@id=\"next_action_status\"]/*"));
+		//  choose "Waiting" to be sure that "Current" option is not set
+		selenium.select("next_action_status", "label=Waiting");
+		//  verify "Current" option is not selected 
+		verifyNotEquals("Current", selenium.getSelectedLabel("id=next_action_status"));
+		//  select "Current" option 
+		selenium.select("identifier=next_action_status", "Current");
+		//  verify "Current" option is selected 
+		assertEquals("Current", selenium.getSelectedLabel("next_action_status"));
+		//  check for element presence 
+		assertTrue(selenium.isElementPresent("next_action_name"));
+		//  write message to field 
+		selenium.type("next_action_name", "Write post to my blog");
+		//  check for element presence 
+		assertTrue(selenium.isElementPresent("next_action_due"));
+		//  write text to field 
+		selenium.type("next_action_due", "tomorrow");
+		//  check for element presence 
+		assertTrue(selenium.isElementPresent("move_to_top"));
+		//  mark checkbox 
+		selenium.click("move_to_top");
+		//  check for element presence 
+		assertTrue(selenium.isElementPresent("create_next_action_btn"));
+		//  mark checkbox 
+		selenium.click("create_next_action_btn");
+		//  verify that window is not opened
+		for (int second = 0;; second++) {
+			if (second >= 60) fail("timeout");
+			try { if (!selenium.isElementPresent("window_dialog_new_action")) break; } catch (Exception e) {}
+			Thread.sleep(1000);
+		}
+
+		//  verify that actions is created 
+		assertTrue(selenium.isElementPresent("//span[text()=\"Write post to my blog\"]"));
+		//  store id of new action for further reuse 
+		String new_action_id = selenium.getValue("//ul[@id='action_list_sortable_current']/li[./*/*/*/*/*/*/span/text()=\"Write post to my blog\"]/@id");
+		System.out.println(new_action_id);
+		verifyEquals(new_action_id, selenium.getValue("//ul[@id='action_list_sortable_current']/li[position()=1]/@id"));
+		verifyEquals("Write post to my blog", selenium.getText("//span/span[ancestor::*[@id=\"" + new_action_id + "\"] and @id]/text()"));
+		verifyTrue(Pattern.compile(".*[0-9]*.*").matcher(selenium.getText("//span/span[ancestor::*[@id=\"" + new_action_id + "\"] and not(@id)]/text()")).find());
+		String action_id = selenium.getEval("var str=\"" + new_action_id + "\";str.split(\"_\")[2];");
+		verifyEquals("1", selenium.getXpathCount("//a[ancestor::*[@id=\"upcoming_list\"] and @href=\"http://localhost:5500/next_actions/" + action_id + "\"]"));
+		System.out.println("WIN!");
+	
+	}
+
+	private void openPage(String url) throws InterruptedException {
+		selenium.open(url);
+		for (int second = 0;; second++) {
+			if (second >= 60) fail("timeout");
+			try { if (selenium.getTitle().matches("^[\\s\\S]hat[\\s\\S]*Next[\\s\\S]*$")) break; } catch (Exception e) {}
+			Thread.sleep(1000);
+		}
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		selenium.stop();
+		
+	}
+}

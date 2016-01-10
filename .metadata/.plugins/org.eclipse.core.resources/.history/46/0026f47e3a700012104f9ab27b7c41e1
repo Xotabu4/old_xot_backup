@@ -1,0 +1,36 @@
+package webDriver;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class testGooglePageObject {
+	
+	
+	@Before
+	
+	
+	
+	@After
+	
+	
+	
+	
+	
+	@Test
+	private void testGoogleSearch() {
+		
+		SearchPage page = new SearchPage();
+		
+		ResultsPage results = page.search("test automation");
+		
+		 results.getNameOfLinkByIndex(1);
+		
+		 assertE
+		
+
+	}
+	
+
+}

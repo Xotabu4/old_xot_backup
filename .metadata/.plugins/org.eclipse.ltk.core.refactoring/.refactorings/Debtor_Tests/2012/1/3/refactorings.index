@@ -1,0 +1,18 @@
+1326728417654	Delete element
+1326728950918	Rename method 'AffiliateCanBeAdded'
+1326965603782	Rename type 'ContactDataGenerator'
+1326966417382	Rename method 'generateRandomContactList'
+1326966459972	Rename local variable 'contact'
+1326966471252	Rename local variable 'contacts'
+1326966605529	Rename method 'loadContactsFromFile'
+1326966651559	Rename method 'generateDataToFile'
+1326970404476	Rename field 'clickOnFDCPA'
+1326973390829	Rename field 'clickOnAllowFDCPA'
+1326973403221	Rename field 'clickOnAllowDDS'
+1326973419490	Rename field 'clickOnAllowDDSDiscount'
+1326973441470	Rename field 'clickOnAllowFCRA'
+1326980459867	Rename method 'generateRandomEnterpriseList'
+1326985933389	Delete element
+1326989180015	Move 1 resources to 'Debtor_Tests'
+1326989365651	Delete element
+1326990013529	Delete element

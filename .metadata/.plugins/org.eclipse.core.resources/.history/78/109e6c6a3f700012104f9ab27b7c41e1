@@ -1,0 +1,22 @@
+package tdd;
+
+import org.openqa.selenium.WebDriver;
+
+public class HomePage {
+
+		
+	private WebDriver driver;
+		
+		
+	public HomePage(WebDriver driver) {
+		  this.driver = driver;
+		
+	}
+
+	public String createNewAction(String actionname) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}
+

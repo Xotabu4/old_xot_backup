@@ -1,0 +1,31 @@
+package objects;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestTrainSpeed {
+	
+	Train train;
+
+	@Before
+	public void setUp() throws Exception {
+		
+		train = new Train();
+		
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void test() {
+		train.speedUp(100);
+		assertEquals(100, train.getSpeed());
+		
+	}
+
+}

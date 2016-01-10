@@ -1,0 +1,8 @@
+1322940373848	Rename type 'VerifiyForGroups'
+1322946077549	Rename local variable 'firstName'
+1322946085753	Rename local variable 'ContactFirstName'
+1322946148897	Rename local variable 'lastName'
+1322950605459	Rename local variable 'contactFirstName'
+1322957775359	Rename method 'testContactWithIncorrectDataCanBeCreated'
+1322957796741	Rename method 'testGroupwithIncorectDataCanBeCreated'
+1323007676446	Rename method 'testValidContactCanBeCreated'

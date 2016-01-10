@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="34788" started-at="2012-05-27T13:54:25Z" finished-at="2012-05-27T13:54:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="34788" started-at="2012-05-27T13:54:25Z" finished-at="2012-05-27T13:54:59Z">
+      <class name="framework.scroll">
+        <test-method status="PASS" signature="run()[pri:0, instance:framework.scroll@686963d0]" name="run" duration-ms="34737" started-at="2012-05-27T13:54:25Z" finished-at="2012-05-27T13:54:59Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

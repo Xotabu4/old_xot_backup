@@ -1,0 +1,26 @@
+package tdd;
+
+import frameWork.Driver;
+
+public class ActionsList {
+	
+	
+	@FindBy (css = "#action_list_current")
+	WebElement currentList;
+	
+	
+
+	
+	private void getCurrentList() {
+
+	
+		//driver.findElement
+		
+	}
+
+	public void completeActionByIndex(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

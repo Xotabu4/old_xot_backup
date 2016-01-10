@@ -1,0 +1,24 @@
+package tdd;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class HomePage {
+
+	public HomePage(FirefoxDriver driver) {
+		
+	private WebDriver driver;
+		
+		
+	public HomePage(WebDriver driver) {
+		  this.driver = driver;
+		
+	}
+
+	public String createNewAction() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
+}

@@ -1,0 +1,15 @@
+1327237788219	Rename field 'string'
+1327237809197	Rename local variable 'string'
+1327237815976	Rename local variable 'FirstName'
+1327237819993	Rename field 'FirstName'
+1327237831961	Rename field 'LastName'
+1327237840555	Rename local variable 'string'
+1327238545108	Rename type 'contactHelper'
+1327238705281	Move compilation unit
+1327242146866	Rename field 'exec'
+1327244450767	Extract method 'initContactCreation'
+1327244511906	Extract method 'fillContactForm'
+1327244532586	Extract method 'confirmContactCreation'
+1327438146880	Copy compilation unit
+1327438435735	Extract method 'selectFirstContact'
+1327439417094	Delete element

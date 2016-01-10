@@ -1,0 +1,9 @@
+1334467900543	Delete element
+1334467913240	Delete element
+1334567881373	Rename type 'Cissors'
+1334590261005	Convert local variable 'tempUserObject' to field
+1334590266063	Convert local variable 'userObject' to field
+1334590985262	Encapsulate field 'userObject'
+1334592724326	Convert local variable 'contentPane' to field
+1334594430514	Convert local variable 'text' to field
+1334595739356	Extract method 'computerSelection'

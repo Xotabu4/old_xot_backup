@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ALL TESTS">
+	<parameter name="configFile" value="application.properties"></parameter>
+  <test verbose="2" name="Default test">
+    <classes>
+    
+      <class name="com.example.tests.GroupCreationTests"></class>
+      <class name="com.example.tests.GroupModificationTests"></class>
+      <class name="com.example.tests.GroupRemovalTests"></class>
+      
+      <class name="com.example.tests.ContactCreationTest"></class>
+      <class name="com.example.tests.ContactModificationTests"></class>
+      <class name="com.example.tests.ContactRemovalTests"></class>
+      
+    </classes>
+  </test>
+</suite>

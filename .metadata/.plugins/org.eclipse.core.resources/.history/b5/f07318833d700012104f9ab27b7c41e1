@@ -1,0 +1,10 @@
+package webDriver;
+
+public class ResultsPage {
+
+	public void getNameOfLinkByIndex(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

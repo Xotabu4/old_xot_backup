@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UserCreationSuite" parallel="none">
+  <test name="UserCreationTests" preserve-order="true">
+    <classes>
+      <class name="mainPackage.tests.AffiliateCreationTest"/>
+      <class name="mainPackage.tests.SalesTests"/>
+      <class name="mainPackage.tests.EnterpriseCreationTests"/>
+	  <class name="mainPackage.tests.LeadProviderCreationTests"/>
+    </classes>
+  </test>
+</suite>

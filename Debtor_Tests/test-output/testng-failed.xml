@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [UserCreationSuite]" parallel="none">
+  <test name="UserCreationTests(failed)" parallel="none" preserve-order="true">
+    <classes>
+      <class name="mainPackage.tests.SalesTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="mainPackage.tests.AffiliateCreationTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="mainPackage.tests.LeadProviderCreationTests">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="mainPackage.tests.EnterpriseCreationTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="EnterpriseCanBeAddedWithExistingNameThatCorrectedToNonExistingName" invocation-numbers="0"/>
+          <include name="EnterpriseCanBeAdded" invocation-numbers="0"/>
+          <include name="EnterpriseCannotBeAddedWithEmptyFields"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,6 @@
+1323688393215	Extract local variable 'asd2'
+1323688404332	Extract local variable 'sdf2'
+1323691026248	Rename method 'checkThatEmployerStatusesInDropdownIsValid'
+1323695794820	Rename method 'fillingBankrupcyCounselor'
+1323695869645	Extract method 'clickNextStepButton'
+1323699475097	Extract method 'waitForLoaderNotPresented'

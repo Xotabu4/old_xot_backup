@@ -1,0 +1,23 @@
+package webDriver;
+
+import org.testng.annotations.Test;
+import static org.junit.Assert.*;
+
+public class testGooglePageObject {
+	
+	@Test
+	private void testGoogleSearch() {
+		
+		SearchPage page = new SearchPage();
+		
+		ResultsPage results = page.search("test automation");
+		
+		 results.getNameOfLinkByIndex(1);
+		
+		 assertEquals
+		
+
+	}
+	
+
+}

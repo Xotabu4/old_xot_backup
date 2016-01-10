@@ -1,0 +1,17 @@
+1360064356013	Encapsulate field 'speed'
+1360064476341	Delete element
+1360064659244	Delete element
+1360064688010	Encapsulate field 'speed'
+1360068046033	Extract method 'openPage'
+1360068081382	Introduce parameter for 'openPage'
+1360068252114	Extract method 'createAction'
+1360068267733	Extract method 'assertCreation'
+1360070291258	Delete element
+1360140799202	Convert local variable 'driver' to field
+1360142884985	Extract local variable 'actionname'
+1360150833974	Rename field 'createNewActionButton'
+1360152068771	Copy compilation units
+1360152100003	Delete elements
+1360152111656	Copy compilation units
+1360155549375	Delete element
+1360155603014	Rename type 'CurrentList'

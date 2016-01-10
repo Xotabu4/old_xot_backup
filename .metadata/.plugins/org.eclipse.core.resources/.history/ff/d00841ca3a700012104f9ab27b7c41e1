@@ -1,0 +1,44 @@
+package webDriver;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class testGooglePageObject {
+	
+	
+	@Before
+	public void setup() {
+		FirefoxDriver driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS)
+		
+	}
+	
+	
+	
+	@After
+	
+	
+	
+	
+	
+	@Test
+	private void testGoogleSearch() {
+		
+		SearchPage page = new SearchPage();
+		
+		ResultsPage results = page.search("test automation");
+		
+		 results.getNameOfLinkByIndex(1);
+		
+		 assertE
+		
+
+	}
+	
+
+}

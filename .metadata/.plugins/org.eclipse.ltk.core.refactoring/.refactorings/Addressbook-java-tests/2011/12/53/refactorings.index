@@ -1,0 +1,5 @@
+1325262239840	Move file
+1325275592140	Move compilation unit
+1325277334555	Inline local variable 'mainFrame'
+1325280125253	Delete element
+1325280228204	Extract local variable 'application'

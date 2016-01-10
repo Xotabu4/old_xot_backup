@@ -1,0 +1,46 @@
+package mainPackage.tests;
+
+import java.util.logging.Logger;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+public class DebtorLeadsSiteTests extends TestBase{
+	
+	private Logger log = Logger.getLogger("TEST");
+	
+	
+	@Test
+	public void FilterByStatusWorksCorrect() throws Exception {
+		
+		app.getDebtorLeadsHelper().openUnassignedLeadsPage();
+		
+		app.getDebtorLeadsHelper().selectAndAssertStatus("Valid");
+		
+		app.getDebtorLeadsHelper().selectItemInDropdown("Valid");
+		app.getDebtorLeadsHelper().assertLeadsStatusesInTable("Valid");
+		
+		app.getDebtorLeadsHelper().selectItemInDropdown("NotValid");
+		app.getDebtorLeadsHelper().assertLeadsStatusesInTable("NotValid");
+		
+		
+		app.getDebtorLeadsHelper().openAssignedLeadsPage();
+		
+
+		app.getDebtorLeadsHelper().selectItemInDropdown("Valid");
+		app.getDebtorLeadsHelper().assertLeadsStatusesInTable("Valid");
+		
+		app.getDebtorLeadsHelper().selectItemInDropdown("NotValid");
+		app.getDebtorLeadsHelper().assertLeadsStatusesInTable("NotValid");
+		
+		}
+	 
+	
+	//@Test
+	public void SomeWaitForTest() throws Exception {
+
+		app.getDebtorLeadsHelper().assertLeadsStatusesInTable("Valid");
+		
+	}
+	
+}

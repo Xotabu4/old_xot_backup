@@ -1,0 +1,36 @@
+package objects;
+
+import static org.junit.Assert.assertEquals;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+
+public class TestNGTrain {
+
+	
+	Train train;
+	
+	@Test
+  public void speedUpTest() {
+		
+		train.speedUp(150);
+		
+		assertEquals(100, train.getSpeed());
+		
+		
+  }
+	
+  @BeforeClass
+  public void beforeClass() {
+	  
+	  train = new Train();
+	  
+  }
+
+  @AfterClass
+  public void afterClass() {
+	  
+  }
+
+}

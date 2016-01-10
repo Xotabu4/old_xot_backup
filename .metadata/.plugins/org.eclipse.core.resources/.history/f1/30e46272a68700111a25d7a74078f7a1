@@ -1,0 +1,76 @@
+import java.awt.*;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+
+public class gui_test {
+	
+	public static void main (String[] args){
+		
+		EventQueue.invokeLater(new Runnable() {
+			
+			public void run() {
+				
+				ButtonFrame frame = new ButtonFrame();
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				frame.setVisible(true);
+				
+			}
+		});
+	}
+
+}
+
+class ButtonFrame extends JFrame
+{
+	public ButtonFrame() {
+		setTitle("Rock, Paper, and scissors");
+		setSize(400, 200);
+		
+		JPanel buttonPanel = new JPanel();
+		
+		//JButton Rock = new JButton("Hello World!");
+		
+		makeButton("Rock", 0);
+		makeButton("Paper", 1);
+		makeButton("Scissors", 2);
+
+		add(buttonPanel);
+	}
+	
+	
+	
+	void makeButton (String name, int type){
+		
+		JButton button = new JButton(name);
+		
+		if (type == 0){
+
+			Rock action = new Rock();
+			
+			button.addActionListener((ActionListener) action);
+		}
+		
+		if (type == 1){
+
+			Paper action = new Paper();
+			
+			button.addActionListener((ActionListener) action);
+		}
+		
+		if (type == 2){
+
+			Scissors action = new Scissors();
+			
+			button.addActionListener((ActionListener) action);
+		}else{}
+		
+		add(button);
+		
+	}
+
+
+}

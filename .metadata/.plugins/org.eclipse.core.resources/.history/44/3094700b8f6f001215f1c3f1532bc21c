@@ -1,0 +1,252 @@
+package seleniumRC;
+
+import com.thoughtworks.selenium.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import java.util.regex.Pattern;
+
+public class CreateNewAction {
+	@Before
+	public void setUp() throws Exception {
+		selenium = new DefaultSelenium("localhost", 4444, "*chrome", "http://localhost:5500/");
+		selenium.start();
+	}
+
+	@Test
+	public void testCreateNewAction() throws Exception {
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Create New Action Test Case</title>
+</head>
+<body>
+<small> <pre>
+Test Case description:
+№ | TestCase Name     | Test Steps                          | Test Data             | Expected Result                                                                                 
+1 | Create new action | Press "New Action"                  | -                     | Action details window is open                                                                   
+  |                   | Select Status                       | Current               | Current is selected                                                                             
+  |                   | Write action name                   | Write post to my blog | Action name is displayed on "Action" field                                                      
+  |                   | Set action "Due date"               | tomorrow              | 14.04.2009 is displayed                                                                         
+  |                   | Set action on the top of the list   | -                     | CheckBox is checked                                                                             
+  |                   | Press button "Save"                 | -                     | Action window is closed                                                                         
+  |                   | Check action in current list        | -                     | Action is present in list                                                                       
+  |                   | Check action on the top of the list | -                     | Action is on the top of the "current" list                                                      
+  |                   | Check action name                   | -                     | "Write post to my blog" is displayed                                                            
+  |                   | Check "due in" field                | -                     | Due in should be calculated as following "remaining hours today + 12 hours"                     
+  |                   | Check action in "due within" list   | -                     | Action is present and "due in" field is calculated properly as it was mentioned in previous step
+</pre>
+<table cellpadding="1" cellspacing="1" border="1">
+	<tr>
+		<td rowspan="1" colspan="3"><b>Create New Action - TestCase</b></td>
+	</tr>
+	<tr>
+		<td>open</td>
+		<td>http://localhost:5500/</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>waitForTitle</td>
+		<td>?hat*Next*</td>
+		<td></td>
+	</tr-->
+	<!-- try to open window to add new action -->
+	<tr>
+		<td colspan="3">1 | Create new action | Press "New Action" | - |
+		Action details window is open</td>
+	</tr>
+	<tr>
+		<td>click</td>
+		<td>link=New Action</td>
+		<td></td>
+	</tr>
+	<!-- waiting for window to open-->
+	<tr>
+		<td>waitForElementPresent</td>
+		<td>id=window_dialog_new_action</td>
+		<td></td>
+	</tr>
+	<!-- verify that window is opened-->
+	<tr>
+		<td>assertElementPresent</td>
+		<td>//div[@id="window_dialog_new_action"]</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td colspan="3">2 | | Select Status | Current | Current is
+		selected</td>
+	</tr>
+	<!-- verify count of options in drop-down list -->
+	<tr>
+		<td>verifyXpathCount</td>
+		<td>//select[@id="next_action_status"]/*</td>
+		<td>4</td>
+	</tr>
+	<!-- choose "Waiting" to be sure that "Current" option is not set-->
+	<tr>
+		<td>select</td>
+		<td>next_action_status</td>
+		<td>label=Waiting</td>
+	</tr>
+	<!-- verify "Current" option is not selected -->
+	<tr>
+		<td>verifyNotSelectedLabel</td>
+		<td>id=next_action_status</td>
+		<td>Current</td>
+	</tr>
+	<!-- select "Current" option -->
+	<tr>
+		<td>select</td>
+		<td>identifier=next_action_status</td>
+		<td>Current</td>
+	</tr>
+	<!-- verify "Current" option is selected -->
+	<tr>
+		<td>assertSelectedLabel</td>
+		<td>next_action_status</td>
+		<td>Current</td>
+	</tr>
+	<tr>
+		<td colspan="3">3 | | Write action name | Write post to my blog | Action name is displayed on "Action" field</td>
+	</tr>
+	<!-- check for element presence -->
+	<tr>
+		<td>assertElementPresent</td>
+		<td>next_action_name</td>
+		<td></td>
+	</tr>
+	<!-- write message to field -->
+	<tr>
+		<td>type</td>
+		<td>next_action_name</td>
+		<td>Write post to my blog</td>
+	</tr>
+	<tr>
+		<td colspan="3">4 | | Set action "Due date" | tomorrow |
+		14.04.2009 is displayed</td>
+	</tr>
+	<!-- check for element presence -->	
+	<tr>
+		<td>assertElementPresent</td>
+		<td>next_action_due</td>
+		<td></td>
+	</tr>
+	<!-- write text to field -->	
+	<tr>
+		<td>type</td>
+		<td>next_action_due</td>
+		<td>tomorrow</td>
+	</tr>
+	<tr>
+		<td colspan="3">5 | | Set action on the top of the list | - |
+		CheckBox is checked</td>
+	</tr>
+	<!-- check for element presence -->	
+	<tr>
+		<td>assertElementPresent</td>
+		<td>move_to_top</td>
+		<td></td>
+	</tr>
+	<!-- mark checkbox -->	
+	<tr>
+		<td>click</td>
+		<td>move_to_top</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td colspan="3">6 | | Press button "Save" | - | Action window is
+		closed</td>
+	</tr>
+	<!-- check for element presence -->	
+	<tr>
+		<td>assertElementPresent</td>
+		<td>create_next_action_btn</td>
+		<td></td>
+	</tr>
+	<!-- mark checkbox -->	
+	<tr>
+		<td>click</td>
+		<td>create_next_action_btn</td>
+		<td></td>
+	</tr>
+	<!-- verify that window is not opened-->
+	<tr>
+		<td>waitForNotElementPresent</td>
+		<td>window_dialog_new_action</td>
+		<td></td>
+	</tr>	
+	<tr>
+		<td colspan="3">7 | | Check action in current list | - | Action
+		is present in list</td>
+	</tr>
+	<!-- verify that actions is created -->
+	<tr>
+		<td>assertElementPresent</td>
+		<td>//span[text()="Write post to my blog"]</td>
+		<td></td>
+	</tr>
+	<!-- store id of new action for further reuse -->
+	<tr>
+		<td>storeValue</td>
+		<td>//ul[@id='action_list_sortable_current']/li[./*/*/*/*/*/*/span/text()="Write post to my blog"]/@id</td>
+		<td>new_action_id</td>
+	</tr>
+	<tr>
+		<td>echo</td>
+		<td>${new_action_id}</td>
+		<td></td>
+	</tr>
+
+	<tr>
+		<td colspan="3">8 | | Check action on the top of the list | - | Action is on the top of the "current" list</td>
+	</tr>
+	<tr>
+		<td>verifyValue</td>
+		<td>//ul[@id='action_list_sortable_current']/li[position()=1]/@id</td>
+		<td>${new_action_id}</td>
+	</tr>
+	<tr>
+		<td colspan="3">9 | | Check action name | - | "Write post to my blog" is displayed</td>
+	</tr>
+	<tr>
+		<td>verifyText</td>
+		<td>//span/span[ancestor::*[@id="${new_action_id}"] and @id]/text()</td>
+		<td>Write post to my blog</td>
+	</tr>
+	<tr>
+		<td colspan="3">10 | | Check "due in" field | - | Due in should
+		be calculated as following "remaining hours today + 12 hours"</td>
+	</tr>
+	<tr>
+		<td>verifyText</td>
+		<td>//span/span[ancestor::*[@id="${new_action_id}"] and not(@id)]/text()</td>
+		<td>regexp:.*[0-9]*.*</td>
+	</tr>
+	<tr>
+		<td colspan="3">11 | | Check action in "due within" list | - |
+		Action is present and "due in" field is calculated properly as it was
+		mentioned in previous step</td>
+	</tr>
+	<tr>
+		<td>storeEval</td>
+		<td>var str="${new_action_id}";str.split("_")[2];</td>
+		<td>action_id</td>
+	</tr>
+	<tr>
+		<td>verifyXpathCount</td>
+		<td>//a[ancestor::*[@id="upcoming_list"] and @href="http://localhost:5500/next_actions/${action_id}"]</td>
+		<td>1</td>
+	</tr>
+</table>
+</small>
+
+</body>
+</html>
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		selenium.stop();
+	}
+}

@@ -1,0 +1,31 @@
+package tdd;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import frameWork.Driver;
+
+public class ActionsList {
+	
+	
+	@FindBy (css = "#action_list_current")
+	private WebElement currentList;
+	private WebDriver driver;
+	
+	
+	public ActionsList (WebDriver driver) {
+		
+		this.driver = driver;
+	}
+	
+	
+	public void completeActionByIndex(int i) {
+
+		driver.findElement(By.xpath("(.//*[@id='action_list_current']//img[@title='Complete'])[" + i + "]")).click();
+		
+		//System.out.println(currentList.findElement(By.xpath(".//*[@id='action_list_sortable_current'] // li [" + 1 + "]")).getText()+ "  NUMBER - " + i + "is completed");
+	}
+
+}

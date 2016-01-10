@@ -1,0 +1,9 @@
+
+public class Cissors implements Items{
+	private static String Name = "Cissors";
+
+	public String getName() {
+		return Name;
+	}
+
+}

@@ -1,0 +1,12 @@
+1328465757560	Delete element
+1328465764621	Delete element
+1328465792849	Delete element
+1328467150645	Move compilation unit
+1328467229545	Rename field 'string'
+1328467239207	Rename field 'string2'
+1328467248342	Rename field 'string3'
+1328471172742	Delete element
+1328472352691	Extract method 'pause'
+1328472376904	Introduce parameter for 'pause'
+1328473489264	Rename method 'isLogged'
+1328474716077	Delete element

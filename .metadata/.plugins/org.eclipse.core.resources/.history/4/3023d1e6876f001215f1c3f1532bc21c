@@ -1,0 +1,10 @@
+package objects;
+
+public class Train {
+	
+	int speed;
+	
+	
+	
+
+}

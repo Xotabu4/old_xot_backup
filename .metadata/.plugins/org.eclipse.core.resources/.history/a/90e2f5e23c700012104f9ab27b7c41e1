@@ -1,0 +1,12 @@
+package webDriver;
+
+public class SearchPage {
+
+	public SearchPage search(String string) {
+		
+		
+		
+		return this;
+	}
+
+}

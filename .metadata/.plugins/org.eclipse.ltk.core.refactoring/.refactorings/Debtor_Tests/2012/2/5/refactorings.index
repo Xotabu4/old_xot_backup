@@ -1,0 +1,10 @@
+1328259645993	Delete elements
+1328266701500	Rename method 'openQADebtorSoft'
+1328274771127	Delete element
+1328278273294	Delete element
+1328280919695	Extract method 'writer'
+1328285044217	Extract method 'sendAPIrequest'
+1328285662705	Extract method 'assertCorrectAnswer'
+1328287845396	Delete element
+1328288696414	Rename method 'assertCorrectAnswer'
+1328392235576	Extract constant 'CORRECTLEADS_FROM_FILE'

@@ -1,0 +1,51 @@
+package com.example.tests;
+
+public class ContactObject {
+	public String contactFirstName;
+	public String contactLastName;
+	public String contactAddressText;
+	public String contactHomePhone;
+	public String contactMobilePhone;
+	public String contactWork;
+	public String contactEmail;
+	public String contactEmail2;
+	public String contactByEar;
+	public String contactAddress2;
+	public String contactPhone2;
+	//I convert items that select in dropdown to integer.
+	public int bdaySelect;
+	public int bmountSelect;
+	public int groupSelect;
+	
+	public ContactObject(String contactFirstName,
+			String contactLastName,
+			String contactAddressText,
+			String contactHomePhone,
+			String contactMobilePhone,
+			String contactWork,
+			String contactEmail,
+			String contactEmail2,
+			String contactByEar,
+			String contactAddress2,
+			String contactPhone2,
+			//I convert items that select in dropdown to integer.
+			int bdaySelect,
+			int bmountSelect,
+			int groupSelect) {
+		
+		this.contactFirstName = contactFirstName;
+		this.contactLastName = contactLastName;
+		this.contactAddressText = contactAddressText;
+		this.contactHomePhone = contactHomePhone;
+		this.contactMobilePhone = contactMobilePhone;
+		this.contactWork = contactWork;
+		this.contactEmail = contactEmail;
+		this.contactEmail2 = contactEmail2;
+		this.contactByEar = contactByEar;
+		this.contactAddress2 = contactAddress2;
+		this.contactPhone2 = contactPhone2;
+		this.bdaySelect = bdaySelect;
+		this.bmountSelect = bmountSelect;
+		this.groupSelect = groupSelect;
+	}
+}

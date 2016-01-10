@@ -1,0 +1,13 @@
+1326033832861	Rename method 'verifyGroupNotAdded'
+1326033934030	Move compilation unit
+1326033942914	Move compilation unit
+1326034209464	Copy package
+1326034215894	Delete element
+1326034221109	Delete element
+1326034228788	Delete element
+1326041798487	Rename method 'getSomeGroups'
+1326046563735	Convert local variable 'lastGroupId' to field
+1326052489797	Copy file
+1326058141796	Rename field 'contactCache'
+1326139787357	Rename method 'verifyContactAdded'
+1326144647661	Rename method 'verifyGroupsListsAreSame'

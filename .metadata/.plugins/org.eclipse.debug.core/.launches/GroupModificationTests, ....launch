@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="addressbook-selenium-tests"/>
+<mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS">
+<mapEntry key="com.example.tests.ContactCreationTest" value=""/>
+<mapEntry key="com.example.tests.ContactModificationTests" value=""/>
+<mapEntry key="com.example.tests.ContactObject" value=""/>
+<mapEntry key="com.example.tests.ContactRemovalTests" value=""/>
+<mapEntry key="com.example.tests.GroupCreationTests" value=""/>
+<mapEntry key="com.example.tests.GroupModificationTests" value=""/>
+<mapEntry key="com.example.tests.GroupObject" value=""/>
+<mapEntry key="com.example.tests.GroupRemovalTests" value=""/>
+<mapEntry key="com.example.tests.TestBase" value=""/>
+</mapAttribute>
+<listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+<listEntry value="com.example.tests.GroupModificationTests"/>
+<listEntry value="com.example.tests.ContactCreationTest"/>
+<listEntry value="com.example.tests.GroupCreationTests"/>
+<listEntry value="com.example.tests.GroupObject"/>
+<listEntry value="com.example.tests.ContactModificationTests"/>
+<listEntry value="com.example.tests.GroupRemovalTests"/>
+<listEntry value="com.example.tests.ContactObject"/>
+<listEntry value="com.example.tests.ContactRemovalTests"/>
+<listEntry value="com.example.tests.TestBase"/>
+</listAttribute>
+<listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+<listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+<mapAttribute key="org.testng.eclipse.PARAMETERS"/>
+<intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>

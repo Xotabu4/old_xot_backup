@@ -1,0 +1,1 @@
+start /d \run.exe -p

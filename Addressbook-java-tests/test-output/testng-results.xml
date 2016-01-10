@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="731" started-at="2011-12-31T00:30:41Z" finished-at="2011-12-31T00:30:41Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="731" started-at="2011-12-31T00:30:41Z" finished-at="2011-12-31T00:30:41Z">
+      <class name="com.expample.tests.TestFolderDelete">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.expample.tests.TestFolderDelete@656de49c]" name="setUp" is-config="true" duration-ms="22" started-at="2011-12-31T00:30:41Z" finished-at="2011-12-31T00:30:41Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testFolderDelete()[pri:0, instance:com.expample.tests.TestFolderDelete@656de49c]" name="testFolderDelete" duration-ms="698" started-at="2011-12-31T00:30:41Z" finished-at="2011-12-31T00:30:41Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.expample.tests.TestFolderDelete@656de49c]" name="tearDown" is-config="true" duration-ms="1" started-at="2011-12-31T00:30:41Z" finished-at="2011-12-31T00:30:41Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

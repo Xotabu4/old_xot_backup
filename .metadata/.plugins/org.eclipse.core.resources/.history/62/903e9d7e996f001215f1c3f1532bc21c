@@ -1,0 +1,55 @@
+package webDriver;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+public class Google {
+
+	FirefoxDriver driver;
+	
+	@Before
+	public void setUp() throws Exception {
+		
+		driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); 
+		//implicityWait устанавливает все таймауты на 5 секунд
+		
+		
+		
+		
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		
+		driver.quit();
+	}
+
+	@Test
+	public void test() {
+		
+		
+		driver.get("http://www.google.com.ua/");
+		
+		WebElement search = new WebDriverWait(driver, 10).until( 
+				ExpectedConditions.presenceOfElementLocated(By.id("")));
+				
+				
+				
+				
+				driver.findElement(By.id("gbqfq"));
+		
+		search.sendKeys("HELLO WORLD!");
+		
+	}
+	
+	
+
+}

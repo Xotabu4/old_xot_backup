@@ -1,0 +1,234 @@
+package mainPackage.frameWork;
+
+import static org.testng.AssertJUnit.assertEquals;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+import static org.testng.Assert.*;
+
+import java.util.List;
+
+import mainPackage.frameWork.Enterprise.EnterpriseUserObject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class VerifyHelper extends HelperWithWebDriverBase {
+	
+		protected VerifyHelper(ApplicationManager manager) {
+			super(manager);
+		}
+		
+		public void checkThatStatesInDropdownIsValid(String statesInDropDown) {
+			
+			// Now we support only CA.
+			
+			assertThat(statesInDropDown, equalTo("\nCA"));
+			
+		}
+
+		public void checkEmployerStatusesInDropdown(String statusesInDropdown) {
+			assertThat(statusesInDropdown, equalTo("Employed\nUnemployed\nRetired\nDisabled"));
+			
+		}
+
+		public void verifyEnterpriseAdded(EnterpriseUserObject validEnterprise) {
+			
+			findUser(validEnterprise);
+			
+			click(By.id("MainBodyPlaceHolder_ContentPlaceHolder1_gvSearchResult_lbtnEdit_0"));
+			
+			verifyEnterpriseFields(validEnterprise);
+			
+		}
+		
+		//EnterpriseName_VSUeE@mailinator.com
+
+		private void findUser(EnterpriseUserObject enterprise) {
+			click(By.id("TopHeader_ltbnSearch"));
+			
+			type(By.id("MainBodyPlaceHolder_ContentPlaceHolder1_tbSearch"), enterprise.enterpriseUserEmail);
+			click(By.id("MainBodyPlaceHolder_ContentPlaceHolder1_lblSearch"));
+		}
+		
+		private void findUser(AffiliateObject affiliate) {
+			click(By.id("TopHeader_ltbnSearch"));
+			
+			type(By.id("MainBodyPlaceHolder_ContentPlaceHolder1_tbSearch"), affiliate.affiliateEmail);
+			click(By.id("MainBodyPlaceHolder_ContentPlaceHolder1_lblSearch"));
+		}
+		
+		private void findUser(SalesObject sales) {
+			click(By.id("TopHeader_ltbnSearch"));
+			
+			type(By.id("MainBodyPlaceHolder_ContentPlaceHolder1_tbSearch"), sales.Email);
+			click(By.id("MainBodyPlaceHolder_ContentPlaceHolder1_lblSearch"));
+		}
+		
+		
+
+		private void verifyEnterpriseFields(EnterpriseUserObject Enterprise) {
+			
+			verifyInfoPart(Enterprise);
+			verifyCpParameters(Enterprise);
+
+			System.out.println("Assertings passed");	
+		}
+
+		private void verifyInfoPart(EnterpriseUserObject EnterpriseObject) {
+			
+			assertFieldValue(EnterpriseObject.enterpriseName, By.id(MakeFullLink("tbResellerName")));
+			assertFieldValue(manager.getProperty("GroupIdForEnterpriseCreation"), By.id(MakeFullLink("tbGroupId")));
+			assertFieldValue(EnterpriseObject.gmailURL, By.id(MakeFullLink("tbNextGmailUrl")));
+			assertFieldValue(EnterpriseObject.SupportPhoneNumber, By.id(MakeFullLink("tbSupportPhoneNumber")));
+			assertFieldValue(EnterpriseObject.Extension, By.id(MakeFullLink("tbExtension")));
+			assertFieldValue("Welcome message for"+EnterpriseObject.enterpriseName, By.id(MakeFullLink("tbWelcomeUrl")));
+			
+
+			
+		}
+
+		private void verifyCpParameters(EnterpriseUserObject EnterpriseObject) {
+			
+			
+			assertFieldValue(EnterpriseObject.debtRestructureRate+".00", By.id(MakeFullLink("cpParameters_tbxDebtRestructureRate")));
+			assertFieldValue(EnterpriseObject.debtConsolidationInterestRate+".00", By.id(MakeFullLink("cpParameters_tbxDebtConsolidationInterestRate")));
+			assertFieldValue(EnterpriseObject.ServiceProviderRate+".00", By.id(MakeFullLink("cpParameters_tbxServiceProviderRate")));
+			assertFieldValue(EnterpriseObject.MinimumMonthlyDebtConsolidateRate+".00", By.id(MakeFullLink("cpParameters_tbxMinimumMonthlyDebtConsolidateRate")));
+			assertFieldValue(EnterpriseObject.DDSCost+".00", By.id(MakeFullLink("cpParameters_tbxDDSCost")));
+			assertFieldValue(EnterpriseObject.AllowMinimumMonthlyPayment+".00", By.id(MakeFullLink("cpParameters_tbxAllowMinimumMonthlyPayment")));
+			
+			assertFieldValue(EnterpriseObject.FDCPACost+".00", By.id(MakeFullLink("cpParameters_tbxFDCPACost")));
+			assertFieldValue(EnterpriseObject.FDCPRACost+".00", By.id(MakeFullLink("cpParameters_tbxFDCPRACost")));
+			assertFieldValue(EnterpriseObject.MonthlySoftwareLicenseCost+".00", By.id(MakeFullLink("cpParameters_tbxMonthlySoftwareLicenseCost")));
+			
+			assertFieldValue(EnterpriseObject.taxRate+".00", By.id(MakeFullLink("cpParameters_tbxTaxCost")));
+			assertFieldValue(EnterpriseObject.bankruptcyRate+".00", By.id(MakeFullLink("cpParameters_tbxBankruptcyCost")));
+			
+			
+
+			if(EnterpriseObject.AllowFDCPA.contentEquals("true")){
+				assertCheckboxValue(true, By.id(MakeFullLink("cpParameters_chbAllowFDCPA")));
+			}else{
+				assertCheckboxValue(false, By.id(MakeFullLink("cpParameters_chbAllowFDCPA")));
+			}
+			
+			if(EnterpriseObject.AllowDDS.contentEquals("true")){
+				assertCheckboxValue(true, By.id(MakeFullLink("cpParameters_chbAllowDDS")));
+			}else{
+				assertCheckboxValue(false, By.id(MakeFullLink("cpParameters_chbAllowDDS")));
+			}
+			
+			if(EnterpriseObject.DDSDiscount.contentEquals("true")){
+				assertCheckboxValue(true, By.id(MakeFullLink("cpParameters_chbAllowDDSDiscount")));
+			}else{
+				assertCheckboxValue(false, By.id(MakeFullLink("cpParameters_chbAllowDDSDiscount")));
+			}
+
+			if(EnterpriseObject.AllowFCRA.contentEquals("true")){
+				assertCheckboxValue(true, By.id(MakeFullLink("cpParameters_chbAllowFDCPRA")));
+			}else{
+				assertCheckboxValue(false, By.id(MakeFullLink("cpParameters_chbAllowFDCPRA")));
+			}
+			
+		}
+		
+
+		private void assertFieldValue(String valueToAssert, By locator) {
+			try {
+				
+				assertEquals(valueToAssert, findElement(locator).getAttribute("value"));
+			} catch (Error e) {
+				fail("Field "+locator+" contain wrong info, expected :"+valueToAssert);
+			}
+		}
+		
+		private void assertCheckboxValue(boolean valueToAssert, By locator) {
+			
+			boolean valueOnPage = driver.findElement(locator).isSelected();
+			if(valueToAssert == false){
+			try {
+				assertFalse(valueOnPage);
+			} catch (Error e) {
+				fail("Field "+locator+" contain wrong info:"+valueOnPage+", expected :"+valueToAssert);
+			}
+			}
+			
+			if(valueToAssert == true){
+				try {
+					assertTrue(valueOnPage);
+				} catch (Error e) {
+					fail("Field "+locator+" contain wrong info:"+valueOnPage+", expected :"+valueToAssert);
+				}
+				}
+			
+		}
+		
+
+		//AffiliateMethods
+		
+		
+		public void verifyAffiliateAdded(AffiliateObject validAffiliate) {
+			
+			findUser(validAffiliate);
+			click(By.id("MainBodyPlaceHolder_ContentPlaceHolder1_gvSearchResult_lbtnEdit_0"));
+			
+			verifyAffiliateFields(validAffiliate);
+			System.out.println("AssertingsPassed");
+			
+		}
+
+		private void verifyAffiliateFields(AffiliateObject affiliate) {
+
+			assertFieldValue(affiliate.firstName, By.id(MakeFullLink("tbFirstName")));
+			assertFieldValue(affiliate.lastName, By.id(MakeFullLink("tbLastName")));
+			assertFieldValue(affiliate.affiliateName, By.id(MakeFullLink("tbAffiliateName")));
+			assertFieldValue(affiliate.affiliateEmail, By.id(MakeFullLink("tbEmail")));
+			assertFieldValue(affiliate.affiliatePhoneNumber, By.id(MakeFullLink("tbPhoneNumber")));
+			assertFieldValue(affiliate.affiliateSupportNumber, By.id(MakeFullLink("tbSupportPhoneNumber")));
+			assertFieldValue(affiliate.extension, By.id(MakeFullLink("tbExtension")));
+			assertFieldValue(affiliate.gmailURL, By.id(MakeFullLink("tbNextGmailUrl")));
+			assertFieldValue(affiliate.groupID, By.id(MakeFullLink("tbGroupId")));
+			assertFieldValue(affiliate.affiliateWelcomeMessage, By.id(MakeFullLink("tbWelcomeUrl")));
+			
+		}
+
+		public void verifySalesAdded(SalesObject sales) {
+			
+			findUser(sales);
+			click(By.id("MainBodyPlaceHolder_ContentPlaceHolder1_gvSearchResult_lbtnEdit_0"));
+			verifySalesFields(sales);
+			System.out.println("Assertings for"+sales.Email+"passed succesfully");
+			
+		}
+
+		private void verifySalesFields(SalesObject sales) {
+			
+			assertFieldValue(sales.firstName, By.id(MakeFullLink("tbFirstName")));
+			assertFieldValue(sales.lastName, By.id(MakeFullLink("tbLastName")));
+			assertFieldValue(sales.Email, By.id(MakeFullLink("tbEmail")));
+			assertFieldValue(sales.phone, By.id(MakeFullLink("tbPhoneNumber")));
+			
+		}
+
+		public void verifyThatValidationBlockCreating(int validationMessagesCount) {
+			List<WebElement> errorCount = driver.findElements(By.cssSelector(".formErrorContent"));
+			assertThat(errorCount.size(), equalTo(validationMessagesCount));
+			
+		}
+
+		public void verifyExistNameErrorIsAppear() {
+			String errorMessageTextOnPage;
+			
+				errorMessageTextOnPage = findElement(By.cssSelector(".form-error-notif-message")).getText();
+
+				String errorMessage = "Error! Error insering new enterprise account. Enterprise name already exist.";
+				
+				if(errorMessageTextOnPage.contentEquals(errorMessage) == false) {
+					fail("Error message not equal to specified");
+				
+			}
+			
+			
+		}
+
+}

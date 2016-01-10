@@ -1,0 +1,46 @@
+package tdd;
+
+import static org.junit.Assert.*;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class testNewAction {
+
+	 private FirefoxDriver driver;
+
+	 @Before
+	 public void setup() {
+	  driver = new FirefoxDriver();
+	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	 }
+	 
+	 @After
+	 public void tearDown() {
+	  driver.quit();
+
+	 }
+	 
+	 
+	@Test
+	public void testNewActionCreation() {
+		
+		HomePage hPage = new HomePage(driver);
+		
+		String actionname = "actionName";
+		String action = hPage.createNewAction(actionname);
+		
+		assertTrue(action.matches(driver.findElement(By.cssSelector("#action_list_body_current * li:first-child * table")).getText()));
+		
+		
+		
+		
+		
+	}
+
+}

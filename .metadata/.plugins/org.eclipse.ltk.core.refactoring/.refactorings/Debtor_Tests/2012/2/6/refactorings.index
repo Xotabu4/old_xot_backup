@@ -1,0 +1,6 @@
+1328526070667	Copy compilation unit
+1328708961640	Extract method 'waitForElement'
+1328709004854	Introduce parameter for 'waitForElement'
+1328709041759	Introduce parameter for 'waitForElement'
+1328780027113	Delete element
+1328780145029	Rename type 'BankruptcyHelper'

@@ -1,0 +1,1184 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>221/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Mar 03 13:08:14 EET 2012</td>
+</tr>
+<tr><td>Total time:</td><td>210 seconds (210153 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@148238f4</td>
+<td></td>
+<td>28</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@739abd2b</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@318efaea</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@154e4e31</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@44739f3f</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6087e704</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@3d3b5a3a</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@26c1186f</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@3bd840d9</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@962522b</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@3af7345b</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@53ea0105</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4876db09</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4e2892b</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@40363068</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@482d59a3</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@23b17d49</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@5b0d95cd</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@5918cb3a</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithCorrectDataAndAssigment()'><b>APICanBeUsedWithCorrectDataAndAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@19f488f1</td>
+<td></td>
+<td>1</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@27a36a2</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@510ebe18</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@408fbecf</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@26dfe303</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@56cb07ef</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@5d89635d</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@38a1aa85</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@9c6a99d</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@78ba6c13</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@773829d5</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6d1a0d35</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1816daa9</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4548e798</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4ff217ec</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@693e4a5a</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@d71194d</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1d6b6c55</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@49b09282</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1531164</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithZeroAge()'><b>APICanBeUsedWithZeroAge</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4b144ba2</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@48a826da</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4c29d65b</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@644ca6b6</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@7d1a5fd0</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1badd463</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4adf2940</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@5d684e26</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@57f5b4d1</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@641a034d</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@7a9c8c3f</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@7e3eec1a</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@695cd9c0</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1864160e</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@2df95165</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4aee260b</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@572c4768</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@c191e4c</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@658782a7</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@7e543cb1</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICanBeUsedWithoutAssigment()'><b>APICanBeUsedWithoutAssigment</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@7f42731</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@11afd9cc</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@31984a9d</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@391da0</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@26a0e990</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@9d532ae</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4545f5e3</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@5893bca2</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@34330fb9</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4b612190</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1d6dba0a</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@212cb585</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@3202a2cc</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4e8deb8a</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@66952905</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@f6d64c5</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@5b4bc4e6</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@5b14a306</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@439ce47a</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@3e5e9db7</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyData()'><b>APICantBeUsedWithEmptyData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@823d278</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@24bf1f20</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@5d402eeb</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@29422384</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@67e779a1</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@48f81402</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@2e6f947b</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@42bb0406</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4e300429</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@606ac615</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@34115512</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@3844006e</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6fef3212</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@9e21f52</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@2add5681</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@7b9bd735</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@15535a58</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6124e935</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@338f7701</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@79a93f38</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyDebtAmountData()'><b>APICantBeUsedWithEmptyDebtAmountData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@7c187c8</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@37c398e</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6a6014f7</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@2a24bfaa</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4959d87f</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@71a2f5b1</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@41f6321</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@268c858a</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@3d6721bd</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@b74cb21</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@78a974c7</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1d70ec24</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@53e6978d</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@7b99f8e6</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@79f7abae</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6d13e8f3</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@262f4813</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@56bebb88</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@11fb24d3</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4b8706f6</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyEmailData()'><b>APICantBeUsedWithEmptyEmailData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6e75d758</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@3857dc15</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@15a4eb56</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1af70ee1</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@16ea7549</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6d0718b7</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@3ab28980</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4b94ba17</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@299481b2</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4095c5ec</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@2e39d325</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@55291cd</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1915470e</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@678fb397</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@572022b7</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@12e4d0cd</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@37fcd402</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@2206270b</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6360f5bf</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@2b071e12</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyLastNameData()'><b>APICantBeUsedWithEmptyLastNameData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@c4ce427</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4e1d2b8e</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@32e62121</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6177060f</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@65f4cdd2</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@65c2fee</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@7087e9bf</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@76a8a314</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@288e85b5</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@59cc5d23</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@18a4edc4</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@2f984f7d</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6d7ffbf</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@722e242b</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@47098a</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@40e1f305</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6f628b8d</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4d7c6bf</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1f635484</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1c4c94e5</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithEmptyPhoneData()'><b>APICantBeUsedWithEmptyPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@5d0e8647</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@64811e10</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@20edbca8</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6dabcd9b</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@48da5bc0</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@43277a30</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@7b6bb7d9</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@44449afc</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6b0ede6</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@633e6346</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@78f6e005</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@5b184326</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@727db937</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@61e58565</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@23bb9829</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@19e06de8</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@13f16b4</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6726fef6</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@785606f3</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@63cea096</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithExistEmailAssigmentData()'><b>APICantBeUsedWithExistEmailAssigmentData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@2beb717e</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@a9db0e2</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6d3d7254</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@10439d3b</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@3ffaf3f4</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@7f32e910</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@3cd713fe</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6db248c</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6cf84b0a</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@6f603bdc</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@604ee1f1</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@659adc2c</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@7c959fa1</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@36101d01</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@5323961b</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@19176e5f</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@2a7d2796</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1f8a6890</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@3190dc79</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@25de152f</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongFormatAgeData()'><b>APICantBeUsedWithWrongFormatAgeData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1a7b5617</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@9dd1752</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@7f4c352e</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@40e7fd03</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@2caee320</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@235dc721</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@da99836</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@342f7cfe</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@20657c7b</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1bdb52c8</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@9866417</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@764c562f</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@44fc9e7e</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@5a2445d7</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@8c1e4d5</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@46c80e21</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@4d342f5b</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@1e4218cb</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@5ac791f4</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@441e064c</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsAPItest.APICantBeUsedWithWrongPhoneData()'><b>APICantBeUsedWithWrongPhoneData</b><br>Test class: mainPackage.tests.DebtorLeadsAPItest<br>Parameters: mainPackage.frameWork.LeadsObject@57132e76</td>
+<td></td>
+<td>0</td>
+<td>mainPackage.tests.DebtorLeadsAPItest@5e785d65</td></tr>
+<tr>
+<td title='mainPackage.tests.DebtorLeadsSiteTests.FilterByStatusWorksCorrect()'><b>FilterByStatusWorksCorrect</b><br>Test class: mainPackage.tests.DebtorLeadsSiteTests</td>
+<td></td>
+<td>64</td>
+<td>mainPackage.tests.DebtorLeadsSiteTests@303bc257</td></tr>
+</table><p>
+</body>
+</html>

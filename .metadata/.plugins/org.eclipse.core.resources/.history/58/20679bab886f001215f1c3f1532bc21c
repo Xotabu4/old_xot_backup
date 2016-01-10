@@ -1,0 +1,29 @@
+package objects;
+
+public class Train {
+	
+	private int speed;
+	
+	public void speedUp() {
+		
+		this.speed = 100;
+		
+	}
+	
+	public void stop () {
+		
+		this.speed = 0;
+		
+	}
+	
+	
+	public static void main (String agrs[]) {
+		
+		Train train = new Train ();
+		train.speedUp();
+		train.stop();
+		
+	}
+	
+
+}

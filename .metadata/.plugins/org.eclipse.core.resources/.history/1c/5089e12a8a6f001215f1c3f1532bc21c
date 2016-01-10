@@ -1,0 +1,28 @@
+package objects;
+
+public class Train {
+	
+	private int speed;
+
+	public int getSpeed() {
+		return speed;
+	}
+
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+	
+	
+	public void speedUp (int i) {
+		this.speed = 100;
+		
+	}
+	
+	public void slowDown () {
+		
+		this.speed = 0;
+		
+		
+	}
+
+}
